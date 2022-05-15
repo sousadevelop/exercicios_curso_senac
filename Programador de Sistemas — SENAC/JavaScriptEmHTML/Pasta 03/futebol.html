@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pergunta(texto) {
+        var resposta = prompt(texto);
+        return resposta;
+    }
+
+    var time = pergunta("Informe o seu time preferido: ");
+
+    var vitoria = pergunta("Informe a quantidade de vitórias: ");
+
+    var empate = parseInt(pergunta("Informe a quantidade de empates: "));
+
+    var pontos = vitoria * 3 + empate;
+
+    document.write("Os pontos do seu time são " + pontos);
+
+</script>
